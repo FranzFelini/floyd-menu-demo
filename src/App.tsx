@@ -260,13 +260,79 @@ function App() {
         ref={BlogRef}
         style={{
           backgroundColor: "white",
-          height: "100vh",
+          height: "70vh",
           display: "flex",
           justifyContent: "center",
-          alignItems: "center",
+          alignItems: "flex-start", // Align items to the top
+          position: "relative",
         }}
       >
-        <div>nesto</div>
+        <div
+          style={{
+            position: "relative",
+            padding: "2rem",
+            width: "100%",
+            textAlign: "center",
+            marginBottom: "10rem", // Add bottom margin to space from the map
+          }}
+        >
+          <h1
+            style={{
+              padding: "1rem", // Adjust padding if needed
+            }}
+          >
+            About us
+          </h1>
+          <p
+            style={{
+              width: "100%",
+              marginBottom: "1rem", // Adjust margin as needed
+            }}
+          >
+            Floyd Food Factory is a restaurant established in 2018. Our goal is
+            to provide our customers with the best dining experience. We offer a
+            wide range of dishes, from traditional to modern cuisine. We use
+            only the freshest homegrown ingredients to create delicious and
+            healthy meals. Whether you are looking for a romantic dinner for two
+            or a fun night out with friends, Floyd Food Factory is the perfect
+            place to be. Come and visit us today and enjoy a memorable dining
+            experience!
+          </p>
+
+          <div
+            style={{
+              backgroundColor: "pink",
+              height: "70px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              marginBottom: "10rem", // Space between icons and map
+            }}
+          >
+            <p>icons</p>
+          </div>
+        </div>
+
+        <div>
+          <div
+            style={{
+              width: "850px",
+              height: "550px",
+              backgroundColor: "pink",
+              zIndex: -1,
+              margin: "0 auto",
+              marginRight: "2rem",
+            }}
+          >
+            <iframe
+              width={850}
+              height={550}
+              title="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.016931009403!2d18.91332287617827!3d42.851375671151395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134d07857f4772b7%3A0x5a1ae8bd6a8bb6ba!2sFloyd%20Food%20Factory!5e0!3m2!1sbs!2sba!4v1726958397330!5m2!1sbs!2sba"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
       </div>
 
       <footer
@@ -275,10 +341,11 @@ function App() {
           color: "white",
           textAlign: "center",
           position: "relative",
-          height: "3em",
+          height: "10em",
           justifyContent: "center",
           alignItems: "center",
           display: "flex",
+          marginTop: "5rem",
         }}
       >
         Visit us
