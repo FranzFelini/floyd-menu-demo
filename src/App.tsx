@@ -263,7 +263,7 @@ function App() {
           height: "70vh",
           display: "flex",
           justifyContent: "center",
-          alignItems: "flex-start", // Align items to the top
+          alignItems: "flex-start",
           position: "relative",
         }}
       >
@@ -273,12 +273,12 @@ function App() {
             padding: "2rem",
             width: "100%",
             textAlign: "center",
-            marginBottom: "10rem", // Add bottom margin to space from the map
+            marginBottom: "10rem",
           }}
         >
           <h1
             style={{
-              padding: "1rem", // Adjust padding if needed
+              padding: "1rem",
             }}
           >
             About us
@@ -286,7 +286,7 @@ function App() {
           <p
             style={{
               width: "100%",
-              marginBottom: "1rem", // Adjust margin as needed
+              marginBottom: "1rem",
             }}
           >
             Floyd Food Factory is a restaurant established in 2018. Our goal is
@@ -306,7 +306,7 @@ function App() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              marginBottom: "10rem", // Space between icons and map
+              marginBottom: "10rem",
             }}
           >
             <p>icons</p>
