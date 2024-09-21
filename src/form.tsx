@@ -53,6 +53,8 @@ const Form: React.FC = () => (
             color: "black",
             fontFamily: "Fira Sans Condensed",
             fontSize: "0.9em",
+            alignContent: "center",
+            position: "relative",
           }}
         >
           {field.label}
@@ -63,11 +65,13 @@ const Form: React.FC = () => (
           placeholder={field.placeholder}
           style={{
             padding: "8px",
+            alignContent: "center",
             margin: "12px",
             width: "200px",
             borderRadius: "0.7em",
             border: "0.5px solid black",
             fontFamily: "Fira Sans Condensed",
+            position: "relative",
           }}
         />
       </div>

@@ -8,8 +8,8 @@ const LINKS = [
     href: "#reservations",
   },
   {
-    label: "Blog",
-    href: "#blog",
+    label: "About",
+    href: "#about",
   },
 ];
 
@@ -55,7 +55,7 @@ export function Nav({
                     block: "nearest",
                   });
                   break;
-                case "Blog":
+                case "About":
                   BlogRef.current?.scrollIntoView({
                     behavior: "smooth",
                     block: "nearest",

@@ -8,53 +8,105 @@ interface Dish {
 
 const dishes: Dish[] = [
   {
-    name: "Kačamak",
+    name: "Breakfast Floyd",
     description:
-      "Kačamak is a traditional Montenegrin dish made with mashed potatoes and cheese.",
+      "A hearty Montenegrin dish featuring creamy mashed potatoes and cheese. /350g/",
     imageUrl: "/kacamak4.jpg.webp",
   },
   {
-    name: "Sarma",
-    description: "Traditional Bosnian dish server with potatos and fresh salad",
+    name: "Omellette",
+    description:
+      "A traditional Montenegrin omelette served with tomatos. /300g/",
     imageUrl: "/sarma2.jpeg",
   },
   {
-    name: "Chicken with potatos and salad",
+    name: "Scrambled Eggs",
     description:
-      "Alfredo chicken served with handful of mashed potatos and spinach",
+      "Scrambled eggs paired with tomatos and organic cheese. /300g/",
     imageUrl: "/chicken3.jpeg",
   },
   {
-    name: "Fish with spinach",
+    name: "Traditional Montenegrin Breakfast",
     description:
-      "Fish chached in river Zeta in the village Gornje Polje, served with spinach and mashed potatos",
+      "Traditional breakfast paired with eggs, tomatos, fresh cheese and meat. /300g/",
     imageUrl: "/fish4.jpeg",
   },
   {
-    name: "Ćevapčići",
-    description: "Traditional Balkan dish made with minced meat and spices.",
+    name: "Cheese Pie",
+    description:
+      "A flavorful Balkan dish made with cheese wrapped in flaky pastry. /250g/",
     imageUrl: "/cevapcici5.jpeg",
   },
   {
-    name: "Sandwich",
-    description: "Sandwich with ham, cheese, lettuce, and tomato.",
+    name: "Apple or Cherry Pie",
+    description: "A savory pie made with wild apples or cherries. /250g/",
     imageUrl: "/sandwich6.jpeg",
   },
   {
-    name: "Mixed meat",
-    description:
-      "Combination of local grown meat collected from Gornje polje village ",
+    name: "Montenegrin Fried Dough",
+    description: "A delightful dish made from locally produced dough. /300g/",
     imageUrl: "/mixedmeat7.jpeg",
   },
   {
-    name: "Salad",
+    name: "Fried Bread with Eggs",
     description:
-      "Salad with mayonesse, cheese, lettuce, tomato and cutcumbers.",
+      "Bread made out of organic dough paired with scrambled eggs. /300g/",
     imageUrl: "/salad8.jpeg",
   },
   {
-    name: "Pancakes with chocolate",
-    description: "Pancakes with nutella and chocholate dressing.",
+    name: "Floyd Sandwich",
+    description: "A delicious sandwich made with fresh ingredients. /300g/",
+    imageUrl: "/pancake9.jpeg",
+  },
+  {
+    name: "Charcuterie Plate",
+    description:
+      "A selection of cured meats and cheeses, perfect for sharing. /300g/ 500g/",
+    imageUrl: "/pancake9.jpeg",
+  },
+  {
+    name: "Roast",
+    description: "A succulent roasted dish, ideal for meat lovers. /300g/",
+    imageUrl: "/pancake9.jpeg",
+  },
+  {
+    name: "Veal Broth with Vegetables",
+    description:
+      "A comforting bowl of veal broth enriched with fresh vegetables. /150g/",
+    imageUrl: "/pancake9.jpeg",
+  },
+  {
+    name: "Veal Soup with Vegetables",
+    description:
+      "A hearty soup made with tender veal and seasonal vegetables. /150g/",
+    imageUrl: "/pancake9.jpeg",
+  },
+  {
+    name: "Dish of the Day with Homemade Bread",
+    description: "A daily special served with warm, homemade bread. /300g/",
+    imageUrl: "/pancake9.jpeg",
+  },
+  {
+    name: "Traditional Montenegrin Porridge with Sour Milk",
+    description: "Creamy porridge complemented by tangy sour milk. /350g/",
+    imageUrl: "/pancake9.jpeg",
+  },
+  {
+    name: "Minced Meat with Potatoes and Garlic",
+    description:
+      "Flavorful minced meat served with tender potatoes and garlic, perfect for sharing. /300g/",
+    imageUrl: "/pancake9.jpeg",
+  },
+  {
+    name: "Traditional Mixed Meat on the Grill",
+    description:
+      "A variety of grilled meats showcasing traditional flavors. /400g/",
+    imageUrl: "/pancake9.jpeg",
+  },
+  {
+    name: "Trout Served with Potato Salad",
+    description:
+      "Fresh trout paired with a light potato salad for a refreshing meal. /350g/",
     imageUrl: "/pancake9.jpeg",
   },
 ];
