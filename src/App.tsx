@@ -175,7 +175,6 @@ function App() {
         ref={MenuRef}
         style={{
           backgroundColor: "transparent",
-          height: "360vh",
           display: "flex",
           justifyContent: "center",
           alignItems: "flex-start",
@@ -184,16 +183,11 @@ function App() {
       >
         <DishGallery />
       </div>
-      <div
-        style={{
-          position: "relative",
-        }}
-      >
+      <div className="pb-9">
         <hr
           style={{
             width: "100%",
             border: "1px solid black",
-            marginBottom: "-1rem",
           }}
         ></hr>
         <div
@@ -206,7 +200,6 @@ function App() {
             lineHeight: "0",
             paddingTop: "3rem",
             paddingBottom: "3rem",
-            height: "15px",
           }}
         >
           <h1>CHILDREN'S SURPRISE</h1>
@@ -236,16 +229,9 @@ function App() {
           }}
         ></hr>
         <div
+          className="pb-9 pt-12 flex justify-center align-center font-light text-2xl leading-0"
           style={{
-            justifyContent: "center",
-            textAlign: "center",
             fontFamily: "Copperplate",
-            fontWeight: "lighter",
-            fontSize: "1.5em",
-            lineHeight: "0",
-            paddingTop: "3rem",
-            paddingBottom: "3rem",
-            height: "15px",
           }}
         >
           <h1>VEGAN DISHES</h1>
@@ -272,24 +258,9 @@ function App() {
 
       <div
         ref={BlogRef}
-        style={{
-          backgroundColor: "white",
-          height: "70vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "flex-start",
-          position: "relative",
-        }}
+        className="bg-white height-[70vh] flex justify-center items-center relative xl:flex-row flex-col p-4 text-center gap-8"
       >
-        <div
-          style={{
-            position: "relative",
-            padding: "2rem",
-            width: "100%",
-            textAlign: "center",
-            marginBottom: "10rem",
-          }}
-        >
+        <div>
           <h1
             style={{
               padding: "1rem",
@@ -297,12 +268,7 @@ function App() {
           >
             About us
           </h1>
-          <p
-            style={{
-              width: "100%",
-              marginBottom: "1rem",
-            }}
-          >
+          <p className="w-full max-w-xl">
             Floyd Food Factory is a restaurant established in 2018. Our goal is
             to provide our customers with the best dining experience. We offer a
             wide range of dishes, from traditional to modern cuisine. We use
@@ -313,66 +279,46 @@ function App() {
             experience!
           </p>
 
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "1.5rem",
-              fontSize: "2.5rem",
-            }}
-          >
+          <div className="flex justify-center items-center gap-6 text-4xl">
             {SOCIAL_ICONS.map((icon) => (
               <a
-                style={{
-                  textDecoration: "none",
-                  color: "black",
-                  cursor: "pointer",
-                }}
+                className="no-underline text-black/80 cursor-pointer hover:text-black transition"
                 href={icon.link}
                 target="_blank"
                 key={icon.link}
               >
                 {icon.icon}
               </a>
-            ))}{" "}
+            ))}
           </div>
         </div>
 
-        <div>
-          <div
+        <div
+          style={{
+            borderRadius: "15px",
+            overflow: "hidden",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <iframe
+            title="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.016931009403!2d18.91332287617827!3d42.851375671151395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134d07857f4772b7%3A0x5a1ae8bd6a8bb6ba!2sFloyd%20Food%20Factory!5e0!3m2!1sbs!2sba!4v1726958397330!5m2!1sbs!2sba"
+            loading="lazy"
             style={{
-              width: "850px",
-              height: "550px",
-              backgroundColor: "white",
-              zIndex: -1,
-              margin: "0 auto",
-              marginRight: "2rem",
+              border: "none",
             }}
+            className="max-w-none w-full h-full min-h-[550px] min-w-[850px] hidden lg:block"
+          />
+
+          <a
+            href="https://maps.app.goo.gl/HVAxXeAMq5EdfPmc8"
+            target="_blank"
+            className="lg:hidden px-4 py-2 bg-blue-300 cursor-pointer no-underline text-black"
           >
-            <div
-              style={{
-                width: "850px%",
-                height: "550px%",
-                borderRadius: "15px",
-                overflow: "hidden",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <iframe
-                width={850}
-                height={550}
-                title="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.016931009403!2d18.91332287617827!3d42.851375671151395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134d07857f4772b7%3A0x5a1ae8bd6a8bb6ba!2sFloyd%20Food%20Factory!5e0!3m2!1sbs!2sba!4v1726958397330!5m2!1sbs!2sba"
-                loading="lazy"
-                style={{
-                  border: "none",
-                }}
-              ></iframe>
-            </div>
-          </div>
+            View in Google Maps
+          </a>
         </div>
       </div>
 
