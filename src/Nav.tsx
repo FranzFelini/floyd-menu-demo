@@ -13,48 +13,17 @@ const LINKS = [
   },
 ];
 
-export function Nav({
-  MenuRef,
-  ReservationRef,
-  BlogRef,
-}: {
-  MenuRef: React.RefObject<HTMLDivElement>;
-  ReservationRef: React.RefObject<HTMLDivElement>;
-  BlogRef: React.RefObject<HTMLDivElement>;
-}) {
+export function Nav() {
   return (
     <div className="flex justify-center gap-8 p-3 text-white no-underline font-medium bg-black">
       {LINKS.map((link) => {
         return (
-          <div
-            onClick={() => {
-              switch (link.label) {
-                case "Menu":
-                  MenuRef.current?.scrollIntoView({
-                    behavior: "smooth",
-                    block: "nearest",
-                  });
-                  break;
-                case "Reservations":
-                  ReservationRef.current?.scrollIntoView({
-                    behavior: "smooth",
-                    block: "nearest",
-                  });
-                  break;
-                case "About":
-                  BlogRef.current?.scrollIntoView({
-                    behavior: "smooth",
-                    block: "nearest",
-                  });
-                  break;
-                default:
-                  return null;
-              }
-            }}
+          <a
+            href={link.href}
             className="cursor-pointer px-2 py-1 bg-black no-underline text-white"
           >
             {link.label}
-          </div>
+          </a>
         );
       })}
     </div>

@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { FaFacebook, FaInstagram, FaTripadvisor } from "react-icons/fa";
 import Prikaz from "./Img1CMP";
 import { Nav } from "./Nav";
@@ -25,10 +24,6 @@ const SOCIAL_ICONS = [
 ];
 
 function App() {
-  const MenuRef = useRef<HTMLDivElement>(null);
-  const ReservationRef = useRef<HTMLDivElement>(null);
-  const BlogRef = useRef<HTMLDivElement>(null);
-
   return (
     <div className="animate-in fade-in">
       <div className="flex justify-center relative overflow-hidden">
@@ -51,14 +46,10 @@ function App() {
       </div>
 
       <div className="z-20">
-        <Nav
-          BlogRef={BlogRef}
-          MenuRef={MenuRef}
-          ReservationRef={ReservationRef}
-        />
+        <Nav />
       </div>
 
-      <Form ref={ReservationRef} />
+      <Form />
       <Section text="MENU">
         <DishGallery />
       </Section>
@@ -74,7 +65,7 @@ function App() {
       <Divider />
 
       <div
-        ref={BlogRef}
+        id="about"
         className="bg-white height-[70vh] flex justify-center items-center relative xl:flex-row flex-col p-4 text-center gap-8 max-w-7xl mx-auto"
       >
         <div>

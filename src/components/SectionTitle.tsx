@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const Section = ({ children, text }: Props) => (
-  <div className="pb-9">
+  <div id="menu" className="pb-9">
     <Divider />
 
     <div className="font-[Copperplate] font-light text-center leading-10 text-2xl pt-1">

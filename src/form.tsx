@@ -1,5 +1,3 @@
-import React from "react";
-
 interface FormField {
   label: string;
   type: string;
@@ -40,10 +38,10 @@ const formFields: FormField[] = [
   },
 ];
 
-const Form = ({ ref }: { ref: React.RefObject<HTMLDivElement> }) => (
+const Form = () => (
   <>
     <div
-      ref={ref}
+      id="reservations"
       className="bg-white justify-center items-center w-full lg:min-h-[70vh] max-w-full flex"
     >
       <div className="w-full lg:w-[70%] lg:py-4 flex justify-center items-center gap-4 relative overflow-hidden flex-col lg:px-4 rounded-lg">
