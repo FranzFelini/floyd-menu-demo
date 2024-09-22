@@ -34,7 +34,6 @@ function App() {
       <div className="flex justify-center relative overflow-hidden">
         <Prikaz />
         <div
-          className="hidden lg:block"
           style={{
             backgroundImage: "url(/sto.jpeg)",
             backgroundSize: "cover",
