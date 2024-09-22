@@ -30,17 +30,28 @@ function App() {
   const BlogRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
+    <div className="animate-in fade-in">
+      <div className="flex justify-center relative overflow-hidden">
         <Prikaz />
+        <div
+          className="hidden lg:block"
+          style={{
+            backgroundImage: "url(/sto.jpeg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            filter: "blur(10px)",
+            borderRadius: "30px",
+            zIndex: 1,
+            position: "absolute",
+            top: -20,
+            left: -20,
+            right: -20,
+            bottom: -20,
+          }}
+        />
       </div>
 
-      <div>
+      <div className="z-20">
         <Nav
           BlogRef={BlogRef}
           MenuRef={MenuRef}
@@ -48,56 +59,7 @@ function App() {
         />
       </div>
 
-      <Divider />
-
-      <div
-        ref={ReservationRef}
-        className="bg-white justify-center items-center w-full lg:min-h-[70vh] lg:py-4 max-w-full flex"
-      >
-        <div className="lg:min-h-[60vh] w-full lg:w-[70%] lg:py-4 flex justify-center items-center rounded-xl border border-black gap-4 relative overflow-hidden flex-col lg:px-4">
-          <div className="bg-white flex flex-col gap-2 items-center rounded-xl lg:p-6 w-full z-20 border border-black max-w-[90%] lg:max-w-[60%]">
-            <Form />
-          </div>
-
-          <button
-            style={{
-              display: "flex",
-              borderRadius: "13px",
-              border: "1px solid black",
-              position: "relative",
-              padding: "1em",
-              width: "30%",
-              height: "10%",
-              color: "white",
-              justifyContent: "center",
-              alignItems: "center",
-              fontWeight: "bold",
-              fontFamily: "Fira Sans Condensed",
-              zIndex: 2,
-              backgroundColor: "#8D7BD6",
-              letterSpacing: "1.2px",
-            }}
-          >
-            Reserve now
-          </button>
-          <div
-            className="hidden lg:block"
-            style={{
-              backgroundImage: "url(/sto.jpeg)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              filter: "blur(10px)",
-              borderRadius: "30px",
-              zIndex: 1,
-              position: "absolute",
-              top: -20,
-              left: -20,
-              right: -20,
-              bottom: -20,
-            }}
-          />
-        </div>
-      </div>
+      <Form ref={ReservationRef} />
       <Section text="MENU">
         <DishGallery />
       </Section>
