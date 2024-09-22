@@ -12,15 +12,15 @@ import Form from "./form";
 const SOCIAL_ICONS = [
   {
     icon: <FaInstagram />,
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/floydfood/",
   },
   {
     icon: <FaFacebook />,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/p/Floyd-Food-Factory-100057396011641/",
   },
   {
     icon: <FaTripadvisor />,
-    link: "https://www.tripadvisor.com/",
+    link: "https://www.tripadvisor.com/Restaurant_Review-g304088-d21328713-Reviews-Floyd_Food_Factory-Podgorica_Podgorica_Municipality.html",
   },
 ];
 
@@ -30,12 +30,7 @@ function App() {
   const BlogRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div
-      style={{
-        width: "100%",
-        padding: "0px",
-      }}
-    >
+    <div>
       <div
         style={{
           display: "flex",
@@ -45,7 +40,7 @@ function App() {
         <Prikaz />
       </div>
 
-      <div id="navbar">
+      <div>
         <Nav
           BlogRef={BlogRef}
           MenuRef={MenuRef}
@@ -57,49 +52,13 @@ function App() {
 
       <div
         ref={ReservationRef}
-        style={{
-          backgroundColor: "white",
-          justifyContent: "center",
-          alignItems: "center",
-          alignContent: "center",
-          width: "100%",
-          minHeight: "70vh",
-          paddingTop: "1rem",
-          paddingBottom: "1rem",
-          maxWidth: "100%",
-          display: "flex",
-        }}
+        className="bg-white justify-center items-center w-full lg:min-h-[70vh] lg:py-4 max-w-full flex"
       >
-        <div
-          style={{
-            minHeight: "60vh",
-            width: "70%",
-            paddingTop: "1rem",
-            paddingBottom: "1rem",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            borderRadius: "30px",
-            border: "1px solid black",
-            flexDirection: "column",
-            gap: "1rem",
-            position: "relative",
-            overflow: "hidden",
-          }}
-        >
-          <div
-            style={{
-              backgroundColor: "white",
-              display: "flex",
-              borderRadius: "30px",
-              padding: "20px",
-              width: "60%",
-              zIndex: 2,
-              border: "1px solid black",
-            }}
-          >
+        <div className="lg:min-h-[60vh] w-full lg:w-[70%] lg:py-4 flex justify-center items-center rounded-xl border border-black gap-4 relative overflow-hidden flex-col lg:px-4">
+          <div className="bg-white flex flex-col gap-2 items-center rounded-xl lg:p-6 w-full z-20 border border-black max-w-[90%] lg:max-w-[60%]">
             <Form />
           </div>
+
           <button
             style={{
               display: "flex",
@@ -122,6 +81,7 @@ function App() {
             Reserve now
           </button>
           <div
+            className="hidden lg:block"
             style={{
               backgroundImage: "url(/sto.jpeg)",
               backgroundSize: "cover",

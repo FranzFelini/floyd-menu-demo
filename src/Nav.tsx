@@ -23,10 +23,7 @@ export function Nav({
   BlogRef: React.RefObject<HTMLDivElement>;
 }) {
   return (
-    <div
-      id="navbar"
-      className="m-0 flex justify-center gap-8 p-3 text-white no-underline w-full font-medium bg-black"
-    >
+    <div className="flex justify-center gap-8 p-3 text-white no-underline font-medium bg-black">
       {LINKS.map((link) => {
         return (
           <div
