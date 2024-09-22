@@ -2,6 +2,8 @@ import { useRef } from "react";
 import { FaFacebook, FaInstagram, FaTripadvisor } from "react-icons/fa";
 import Prikaz from "./Img1CMP";
 import { Nav } from "./Nav";
+import { Divider } from "./components/Divider";
+import { Section } from "./components/SectionTitle";
 import DishGallery from "./dishcardcmp";
 import DishGallery2 from "./dishcardcmp2";
 import DishGallery3 from "./dishcardcmp3";
@@ -51,12 +53,7 @@ function App() {
         />
       </div>
 
-      <hr
-        style={{
-          width: "101.1%",
-          border: "1px solid black",
-        }}
-      ></hr>
+      <Divider />
 
       <div
         ref={ReservationRef}
@@ -141,124 +138,23 @@ function App() {
           />
         </div>
       </div>
-      <hr
-        style={{
-          width: "100%",
-          border: "1px solid black",
-          marginBottom: "-1rem",
-        }}
-      ></hr>
-      <div
-        style={{
-          justifyContent: "center",
-          textAlign: "center",
-          fontFamily: "Copperplate",
-          fontWeight: "lighter",
-          fontSize: "1.5em",
-          lineHeight: "0",
-          paddingTop: "3rem",
-          paddingBottom: "3rem",
-          height: "15px",
-        }}
-      >
-        <h1>MENU</h1>
-      </div>
-
-      <hr
-        style={{
-          width: "82%",
-          border: "1px solid black",
-          marginBottom: "3rem",
-        }}
-      ></hr>
-      <div
-        ref={MenuRef}
-        style={{
-          backgroundColor: "transparent",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "flex-start",
-          paddingBottom: "2rem",
-        }}
-      >
+      <Section text="MENU">
         <DishGallery />
-      </div>
-      <div className="pb-9">
-        <hr
-          style={{
-            width: "100%",
-            border: "1px solid black",
-          }}
-        ></hr>
-        <div
-          style={{
-            justifyContent: "center",
-            textAlign: "center",
-            fontFamily: "Copperplate",
-            fontWeight: "lighter",
-            fontSize: "1.5em",
-            lineHeight: "0",
-            paddingTop: "3rem",
-            paddingBottom: "3rem",
-          }}
-        >
-          <h1>CHILDREN'S SURPRISE</h1>
-        </div>
+      </Section>
 
-        <hr
-          style={{
-            width: "82%",
-            border: "1px solid black",
-            marginBottom: "3rem",
-          }}
-        ></hr>
-
+      <Section text="CHILDREN'S SURPRISE">
         <DishGallery2 />
-      </div>
+      </Section>
 
-      <div
-        style={{
-          position: "relative",
-        }}
-      >
-        <hr
-          style={{
-            width: "100%",
-            border: "1px solid black",
-            marginBottom: "-1rem",
-          }}
-        ></hr>
-        <div
-          className="pb-9 pt-12 flex justify-center align-center font-light text-2xl leading-0"
-          style={{
-            fontFamily: "Copperplate",
-          }}
-        >
-          <h1>VEGAN DISHES</h1>
-        </div>
-
-        <hr
-          style={{
-            width: "82%",
-            border: "1px solid black",
-            marginBottom: "3rem",
-          }}
-        ></hr>
-
+      <Section text="VEGAN DISHES">
         <DishGallery3 />
-      </div>
+      </Section>
 
-      <hr
-        style={{
-          width: "100%",
-          border: "1px solid black",
-          position: "relative",
-        }}
-      ></hr>
+      <Divider />
 
       <div
         ref={BlogRef}
-        className="bg-white height-[70vh] flex justify-center items-center relative xl:flex-row flex-col p-4 text-center gap-8"
+        className="bg-white height-[70vh] flex justify-center items-center relative xl:flex-row flex-col p-4 text-center gap-8 max-w-7xl mx-auto"
       >
         <div>
           <h1

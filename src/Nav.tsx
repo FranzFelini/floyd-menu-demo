@@ -25,18 +25,7 @@ export function Nav({
   return (
     <div
       id="navbar"
-      style={{
-        margin: "0px",
-        display: "flex",
-        justifyContent: "center",
-        gap: "2rem",
-        padding: "10px",
-        color: "white",
-        textDecoration: "none",
-        backgroundColor: "black",
-        width: "100%",
-        fontWeight: "medium",
-      }}
+      className="m-0 flex justify-center gap-8 p-3 text-white no-underline w-full font-medium bg-black"
     >
       {LINKS.map((link) => {
         return (
@@ -65,17 +54,7 @@ export function Nav({
                   return null;
               }
             }}
-            style={{
-              cursor: "pointer",
-              paddingLeft: "10px",
-              paddingRight: "10px",
-              paddingTop: "5px",
-              paddingBottom: "5px",
-              borderRadius: "5px",
-              backgroundColor: "black",
-              textDecoration: "none",
-              color: "white",
-            }}
+            className="cursor-pointer px-2 py-1 bg-black no-underline text-white"
           >
             {link.label}
           </div>
