@@ -1,1 +1,419 @@
 brush script mt
+
+
+<div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "1.5em",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            id="jelo1"
+            style={{
+              backgroundColor: "white",
+              height: "15em",
+              width: "37em",
+              borderRadius: "15px",
+              textAlign: "center",
+              alignContent: "center",
+              position: "relative",
+              overflow: "hidden",
+              gap: "1em",
+              marginBottom: "1.5em",
+              boxSizing: "border-box",
+              flexDirection: "column",
+            }}
+          >
+            <div>
+              <div
+                style={{
+                  width: "30%",
+                  height: "100%",
+                  position: "absolute",
+                  left: "25em",
+                  top: "5em",
+                }}
+              >
+                <p
+                  style={{
+                    fontFamily: "Copperplate",
+                    fontSize: "2.5em",
+                    color: "black",
+                    fontWeight: "normal",
+                    bottom: "4.8em",
+                    position: "absolute",
+                    left: "-0.3em",
+                  }}
+                >
+                  Kačamak
+                </p>
+
+                <p
+                  style={{
+                    textAlign: "center",
+                    top: "-0.8em",
+                    left: "-0.6em",
+                    width: "170px",
+                    position: "relative",
+                  }}
+                >
+                  Kačamak is an traditional Montenegrin dish made with mashed
+                  potatos and cheese.
+                </p>
+              </div>
+            </div>
+            <div
+              style={{
+                backgroundImage: "url(/kacamak4.jpg.webp)",
+                backgroundPosition: "left",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                maxWidth: "60%",
+                height: "100%",
+                overflow: "hidden",
+              }}
+            ></div>
+          </div>
+
+          <div
+            id="jelo1"
+            style={{
+              backgroundColor: "white",
+              height: "15em",
+              width: "37em",
+              borderRadius: "15px",
+              textAlign: "center",
+              alignContent: "center",
+              position: "relative",
+              overflow: "hidden",
+              gap: "1em",
+              marginBottom: "1.5em",
+              boxSizing: "border-box",
+              flexDirection: "column",
+            }}
+          >
+            <div>
+              <div
+                style={{
+                  width: "30%",
+                  height: "100%",
+                  position: "absolute",
+                  left: "25em",
+                  top: "5em",
+                }}
+              >
+                <p
+                  style={{
+                    fontFamily: "Copperplate",
+                    fontSize: "2.5em",
+                    color: "black",
+                    fontWeight: "normal",
+                    bottom: "4.8em",
+                    position: "absolute",
+                    left: "-0.3em",
+                  }}
+                >
+                  Kačamak
+                </p>
+
+                <p
+                  style={{
+                    textAlign: "center",
+                    top: "-0.8em",
+                    left: "-0.6em",
+                    width: "170px",
+                    position: "relative",
+                  }}
+                >
+                  Kačamak is an traditional Montenegrin dish made with mashed
+                  potatos and cheese.
+                </p>
+              </div>
+            </div>
+            <div
+              style={{
+                backgroundImage: "url(/kacamak4.jpg.webp)",
+                backgroundPosition: "left",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                maxWidth: "60%",
+                height: "100%",
+                overflow: "hidden",
+              }}
+            ></div>
+          </div>
+
+          <div
+            id="jelo1"
+            style={{
+              backgroundColor: "white",
+              height: "15em",
+              width: "37em",
+              borderRadius: "15px",
+              textAlign: "center",
+              alignContent: "center",
+              position: "relative",
+              overflow: "hidden",
+              gap: "1em",
+              marginBottom: "1.5em",
+              boxSizing: "border-box",
+              flexDirection: "column",
+            }}
+          >
+            <div>
+              <div
+                style={{
+                  width: "30%",
+                  height: "100%",
+                  position: "absolute",
+                  left: "25em",
+                  top: "5em",
+                }}
+              >
+                <p
+                  style={{
+                    fontFamily: "Copperplate",
+                    fontSize: "2.5em",
+                    color: "black",
+                    fontWeight: "normal",
+                    bottom: "4.8em",
+                    position: "absolute",
+                    left: "-0.3em",
+                  }}
+                >
+                  Kačamak
+                </p>
+
+                <p
+                  style={{
+                    textAlign: "center",
+                    top: "-0.8em",
+                    left: "-0.6em",
+                    width: "170px",
+                    position: "relative",
+                  }}
+                >
+                  Kačamak is an traditional Montenegrin dish made with mashed
+                  potatos and cheese.
+                </p>
+              </div>
+            </div>
+            <div
+              style={{
+                backgroundImage: "url(/kacamak4.jpg.webp)",
+                backgroundPosition: "left",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                maxWidth: "60%",
+                height: "100%",
+                overflow: "hidden",
+              }}
+            ></div>
+          </div>
+
+          <div
+            id="jelo1"
+            style={{
+              backgroundColor: "white",
+              height: "15em",
+              width: "37em",
+              borderRadius: "15px",
+              textAlign: "center",
+              alignContent: "center",
+              position: "relative",
+              overflow: "hidden",
+              gap: "1em",
+              marginBottom: "1.5em",
+              boxSizing: "border-box",
+              flexDirection: "column",
+            }}
+          >
+            <div>
+              <div
+                style={{
+                  width: "30%",
+                  height: "100%",
+                  position: "absolute",
+                  left: "25em",
+                  top: "5em",
+                }}
+              >
+                <p
+                  style={{
+                    fontFamily: "Copperplate",
+                    fontSize: "2.5em",
+                    color: "black",
+                    fontWeight: "normal",
+                    bottom: "4.8em",
+                    position: "absolute",
+                    left: "-0.3em",
+                  }}
+                >
+                  Kačamak
+                </p>
+
+                <p
+                  style={{
+                    textAlign: "center",
+                    top: "-0.8em",
+                    left: "-0.6em",
+                    width: "170px",
+                    position: "relative",
+                  }}
+                >
+                  Kačamak is an traditional Montenegrin dish made with mashed
+                  potatos and cheese.
+                </p>
+              </div>
+            </div>
+            <div
+              style={{
+                backgroundImage: "url(/kacamak4.jpg.webp)",
+                backgroundPosition: "left",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                maxWidth: "60%",
+                height: "100%",
+                overflow: "hidden",
+              }}
+            ></div>
+          </div>
+
+          <div
+            id="jelo1"
+            style={{
+              backgroundColor: "white",
+              height: "15em",
+              width: "37em",
+              borderRadius: "15px",
+              textAlign: "center",
+              alignContent: "center",
+              position: "relative",
+              overflow: "hidden",
+              gap: "1em",
+              marginBottom: "1.5em",
+              boxSizing: "border-box",
+              flexDirection: "column",
+            }}
+          >
+            <div>
+              <div
+                style={{
+                  width: "30%",
+                  height: "100%",
+                  position: "absolute",
+                  left: "25em",
+                  top: "5em",
+                }}
+              >
+                <p
+                  style={{
+                    fontFamily: "Copperplate",
+                    fontSize: "2.5em",
+                    color: "black",
+                    fontWeight: "normal",
+                    bottom: "4.8em",
+                    position: "absolute",
+                    left: "-0.3em",
+                  }}
+                >
+                  Kačamak
+                </p>
+
+                <p
+                  style={{
+                    textAlign: "center",
+                    top: "-0.8em",
+                    left: "-0.6em",
+                    width: "170px",
+                    position: "relative",
+                  }}
+                >
+                  Kačamak is an traditional Montenegrin dish made with mashed
+                  potatos and cheese.
+                </p>
+              </div>
+            </div>
+            <div
+              style={{
+                backgroundImage: "url(/kacamak4.jpg.webp)",
+                backgroundPosition: "left",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                maxWidth: "60%",
+                height: "100%",
+                overflow: "hidden",
+              }}
+            ></div>
+          </div>
+
+          <div
+            id="jelo1"
+            style={{
+              backgroundColor: "white",
+              height: "15em",
+              width: "37em",
+              borderRadius: "15px",
+              textAlign: "center",
+              alignContent: "center",
+              position: "relative",
+              overflow: "hidden",
+              gap: "1em",
+              marginBottom: "1.5em",
+              boxSizing: "border-box",
+              flexDirection: "column",
+            }}
+          >
+            <div>
+              <div
+                style={{
+                  width: "30%",
+                  height: "100%",
+                  position: "absolute",
+                  left: "25em",
+                  top: "5em",
+                }}
+              >
+                <p
+                  style={{
+                    fontFamily: "Copperplate",
+                    fontSize: "2.5em",
+                    color: "black",
+                    fontWeight: "normal",
+                    bottom: "4.8em",
+                    position: "absolute",
+                    left: "-0.3em",
+                  }}
+                >
+                  Kačamak
+                </p>
+
+                <p
+                  style={{
+                    textAlign: "center",
+                    top: "-0.8em",
+                    left: "-0.6em",
+                    width: "170px",
+                    position: "relative",
+                  }}
+                >
+                  Kačamak is an traditional Montenegrin dish made with mashed
+                  potatos and cheese.
+                </p>
+              </div>
+            </div>
+            <div
+              style={{
+                backgroundImage: "url(/kacamak4.jpg.webp)",
+                backgroundPosition: "left",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                maxWidth: "60%",
+                height: "100%",
+                overflow: "hidden",
+              }}
+            ></div>
+          </div>
+        </div>

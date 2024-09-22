@@ -1,10 +1,26 @@
 import { useRef } from "react";
+import { FaFacebook, FaInstagram, FaTripadvisor } from "react-icons/fa";
 import Prikaz from "./Img1CMP";
 import { Nav } from "./Nav";
 import DishGallery from "./dishcardcmp";
 import DishGallery2 from "./dishcardcmp2";
 import DishGallery3 from "./dishcardcmp3";
 import Form from "./form";
+
+const SOCIAL_ICONS = [
+  {
+    icon: <FaInstagram />,
+    link: "https://www.instagram.com/",
+  },
+  {
+    icon: <FaFacebook />,
+    link: "https://www.facebook.com/",
+  },
+  {
+    icon: <FaTripadvisor />,
+    link: "https://www.tripadvisor.com/",
+  },
+];
 
 function App() {
   const MenuRef = useRef<HTMLDivElement>(null);
@@ -50,15 +66,19 @@ function App() {
           alignItems: "center",
           alignContent: "center",
           width: "100%",
-          height: "70vh",
+          minHeight: "70vh",
+          paddingTop: "1rem",
+          paddingBottom: "1rem",
           maxWidth: "100%",
           display: "flex",
         }}
       >
         <div
           style={{
-            height: "60vh",
+            minHeight: "60vh",
             width: "70%",
+            paddingTop: "1rem",
+            paddingBottom: "1rem",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -110,13 +130,13 @@ function App() {
               backgroundSize: "cover",
               backgroundPosition: "center",
               filter: "blur(10px)",
-              position: "absolute",
-              top: "-20px",
-              left: "-20px",
-              right: "-20px",
-              bottom: "-20px",
               borderRadius: "30px",
               zIndex: 1,
+              position: "absolute",
+              top: -20,
+              left: -20,
+              right: -20,
+              bottom: -20,
             }}
           />
         </div>
@@ -166,7 +186,6 @@ function App() {
       </div>
       <div
         style={{
-          top: "-200px",
           position: "relative",
         }}
       >
@@ -175,7 +194,6 @@ function App() {
             width: "100%",
             border: "1px solid black",
             marginBottom: "-1rem",
-            top: "20px",
           }}
         ></hr>
         <div
@@ -199,7 +217,6 @@ function App() {
             width: "82%",
             border: "1px solid black",
             marginBottom: "3rem",
-            top: "-400px",
           }}
         ></hr>
 
@@ -208,7 +225,6 @@ function App() {
 
       <div
         style={{
-          top: "-200px",
           position: "relative",
         }}
       >
@@ -217,7 +233,6 @@ function App() {
             width: "100%",
             border: "1px solid black",
             marginBottom: "-1rem",
-            top: "20px",
           }}
         ></hr>
         <div
@@ -252,7 +267,6 @@ function App() {
           width: "100%",
           border: "1px solid black",
           position: "relative",
-          top: "-140px",
         }}
       ></hr>
 
@@ -301,15 +315,27 @@ function App() {
 
           <div
             style={{
-              backgroundColor: "pink",
-              height: "70px",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              marginBottom: "10rem",
+              gap: "1.5rem",
+              fontSize: "2.5rem",
             }}
           >
-            <p>icons</p>
+            {SOCIAL_ICONS.map((icon) => (
+              <a
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                  cursor: "pointer",
+                }}
+                href={icon.link}
+                target="_blank"
+                key={icon.link}
+              >
+                {icon.icon}
+              </a>
+            ))}{" "}
           </div>
         </div>
 
@@ -318,19 +344,34 @@ function App() {
             style={{
               width: "850px",
               height: "550px",
-              backgroundColor: "pink",
+              backgroundColor: "white",
               zIndex: -1,
               margin: "0 auto",
               marginRight: "2rem",
             }}
           >
-            <iframe
-              width={850}
-              height={550}
-              title="map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.016931009403!2d18.91332287617827!3d42.851375671151395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134d07857f4772b7%3A0x5a1ae8bd6a8bb6ba!2sFloyd%20Food%20Factory!5e0!3m2!1sbs!2sba!4v1726958397330!5m2!1sbs!2sba"
-              loading="lazy"
-            ></iframe>
+            <div
+              style={{
+                width: "850px%",
+                height: "550px%",
+                borderRadius: "15px",
+                overflow: "hidden",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <iframe
+                width={850}
+                height={550}
+                title="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.016931009403!2d18.91332287617827!3d42.851375671151395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134d07857f4772b7%3A0x5a1ae8bd6a8bb6ba!2sFloyd%20Food%20Factory!5e0!3m2!1sbs!2sba!4v1726958397330!5m2!1sbs!2sba"
+                loading="lazy"
+                style={{
+                  border: "none",
+                }}
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
