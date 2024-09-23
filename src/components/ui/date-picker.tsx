@@ -20,17 +20,18 @@ export const DatePicker: React.FC<DatePickerProps> = ({ setDate, date, className
         <Button
           variant={"outline"}
           className={cn(
-            "w-[280px] flex items-center justify-start text-left font-normal",
+            "w-[280px] flex items-center justify-start text-left font-normal text-lg",
             !date && "text-muted-foreground",
             className,
           )}
         >
-          <CalendarIcon className="mr-2 h-4 w-4" />
+          <CalendarIcon className="mr-2 h-4 w-4 text-lg" />
           {date ? format(date, "PPP") : <span>Pick a date</span>}
         </Button>
       </PopoverTrigger>
+
       <PopoverContent className="w-auto p-0">
-        <Calendar mode="single" selected={date} onSelect={setDate} initialFocus />
+        <Calendar mode="single" selected={date} onSelect={setDate} />
       </PopoverContent>
     </Popover>
   );
