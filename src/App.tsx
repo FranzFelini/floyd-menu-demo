@@ -49,10 +49,12 @@ function App() {
         <Nav />
       </div>
 
-      <h4 className="p-[1rem] font-[Copperplate] font-bold tracking-tight justify-self-center text-center mb-[2rem] text-4xl mt-20 pb-">
+      <h4 className="p-[1rem] font-[Copperplate] font-bold tracking-tight justify-self-center text-center mb-[2rem`] text-4xl mt-20 pb-">
         Make an reservation
       </h4>
-
+      <div className="flex justify-center align-center">
+        <div className="bg-black w-[530px] h-[0.1em] mb-6"></div>
+      </div>
       <Form />
       <Section text="MENU">
         <DishGallery />
@@ -70,7 +72,7 @@ function App() {
 
       <div
         id="about"
-        className="bg-white height-[70vh] flex justify-center items-center relative xl:flex-row flex-col p-4 text-center gap-8 max-w-7xl mx-auto"
+        className="bg-white height-[70vh] flex justify-center items-`center relative xl:flex-row flex-col p-4 text-center gap-8 max-w-7xl mx-auto"
       >
         <div>
           <h1 className="text-3xl p-[1rem] font-[Fira Sans Serif] font-bold">

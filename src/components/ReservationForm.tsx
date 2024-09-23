@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TimeSelect } from "./time-select";
 import { DatePicker } from "./ui/date-picker";
+import { PhoneInput } from "./ui/phone-input";
 
 interface FormField {
   label: string;
@@ -40,6 +41,12 @@ const formFields: FormField[] = [
     id: "NumberOfPeople",
     placeholder: "How many people?",
   },
+  {
+    label: "Your Local phone number?",
+    type: "phone",
+    id: "PhoneNumber",
+    placeholder: "Your Local phone number?",
+  },
 ];
 
 const Form = () => {
@@ -71,6 +78,8 @@ const Form = () => {
                   />
                 ) : field.type === "time" ? (
                   <TimeSelect time={time} setTime={setTime} />
+                ) : field.type === "phone" ? (
+                  <PhoneInput />
                 ) : (
                   <input
                     type={field.type}
