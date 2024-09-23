@@ -16,7 +16,9 @@ export const DishCard: React.FC<Dish> = ({ name, description, imageUrl }) => (
       }}
     ></div>
     <div className="p-4">
-      <h2 className="text-3xl font-[Copperplate] m-0 leading-8">{name}</h2>
+      <h2 className="font-bold text-4xl font-[Copperplate] m-0 leading-8">
+        {name}
+      </h2>
       <p style={{ marginTop: "0.5em", fontSize: "1em", color: "#555" }}>
         {description}
       </p>
