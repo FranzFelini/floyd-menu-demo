@@ -1,5 +1,5 @@
 import React from "react";
-import { Dish, DishCard } from "./components/DishCard";
+import { Dish, DishCard } from "../DishCard";
 
 const dishes: Dish[] = [
   {
@@ -39,12 +39,7 @@ const DishGallery3: React.FC = () => (
     }}
   >
     {dishes.map((dish, index) => (
-      <DishCard
-        key={index}
-        name={dish.name}
-        description={dish.description}
-        imageUrl={dish.imageUrl}
-      />
+      <DishCard key={index} name={dish.name} description={dish.description} imageUrl={dish.imageUrl} />
     ))}
   </div>
 );

@@ -6,7 +6,7 @@ import { Section } from "./components/SectionTitle";
 import DishGallery from "./components/DishLists/dishcardcmp";
 import DishGallery2 from "./components/DishLists/dishcardcmp2";
 import DishGallery3 from "./components/DishLists/dishcardcmp3";
-import Form from "./components/ReservationForm";
+import Form from "./components/form";
 
 const SOCIAL_ICONS = [
   {

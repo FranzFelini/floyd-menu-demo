@@ -1,3 +1,5 @@
+import { DatePicker } from "./ui/date-picker";
+
 interface FormField {
   label: string;
   type: string;
@@ -40,10 +42,7 @@ const formFields: FormField[] = [
 
 const Form = () => (
   <>
-    <div
-      id="reservations"
-      className="bg-white justify-center items-center w-full lg:min-h-[70vh] max-w-full flex"
-    >
+    <div id="reservations" className="bg-white justify-center items-center w-full lg:min-h-[70vh] max-w-full flex">
       <div className="w-full lg:w-[70%] lg:py-4 flex justify-center items-center gap-4 relative overflow-hidden flex-col lg:px-4 rounded-lg">
         <div className="flex flex-col gap-2 items-center rounded-xl lg:p-6 w-full z-20 max-w-[90%] lg:max-w-[60%]">
           {formFields.map((field) => (
@@ -60,18 +59,23 @@ const Form = () => (
               >
                 {field.label}
               </label>
-              <input
-                type={field.type}
-                id={field.id}
-                placeholder={field.placeholder}
-                style={{
-                  padding: "8px",
-                  width: "100%",
-                  borderRadius: "0.7em",
-                  border: "0.5px solid black",
-                  fontFamily: "Fira Sans Condensed",
-                }}
-              />
+
+              {field.type === "date" ? (
+                <DatePicker className="w-full border-[0.5px] border-black" date={new Date()} setDate={console.log} />
+              ) : (
+                <input
+                  type={field.type}
+                  id={field.id}
+                  placeholder={field.placeholder}
+                  style={{
+                    padding: "8px",
+                    width: "100%",
+                    borderRadius: "0.7em",
+                    border: "0.5px solid black",
+                    fontFamily: "Fira Sans Condensed",
+                  }}
+                />
+              )}
             </div>
           ))}
         </div>
