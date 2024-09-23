@@ -48,12 +48,18 @@ const Form = () => {
 
   return (
     <>
-      <div id="reservations" className="bg-white justify-center items-center w-full lg:min-h-[70vh] max-w-full flex">
+      <div
+        id="reservations"
+        className="bg-white justify-center items-center w-full lg:min-h-[70vh] max-w-full flex"
+      >
         <div className="w-full lg:w-[70%] lg:py-4 flex justify-center items-center gap-4 relative overflow-hidden flex-col lg:px-4 rounded-lg">
           <div className="flex flex-col gap-2 items-center rounded-xl lg:p-6 w-full z-20 max-w-[90%] lg:max-w-[60%]">
             {formFields.map((field) => (
               <div key={field.id} className="w-full pr-4 flex flex-col gap-1">
-                <label htmlFor={field.id} className="text-lg font-medium align-center relative">
+                <label
+                  htmlFor={field.id}
+                  className="text-lg font-medium align-center relative"
+                >
                   {field.label}
                 </label>
 
@@ -83,7 +89,8 @@ const Form = () => {
               borderRadius: "13px",
               border: "1px solid black",
               padding: "1em",
-              width: "30%",
+              width: "50%",
+              marginTop: "1.5em",
               color: "white",
               justifyContent: "center",
               alignItems: "center",

@@ -49,7 +49,7 @@ function App() {
         <Nav />
       </div>
 
-      <h4 className="p-[1rem] font-[Copperplate] font-bold tracking-tight justify-self-center text-center text-4xl mb-2 mt-20">
+      <h4 className="p-[1rem] font-[Copperplate] font-bold tracking-tight justify-self-center text-center mb-[2rem] text-4xl mt-20 pb-">
         Make an reservation
       </h4>
 

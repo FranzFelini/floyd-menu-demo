@@ -4,27 +4,32 @@ import { Dish, DishCard } from "../DishCard";
 const dishes: Dish[] = [
   {
     name: "Breakfast Floyd",
-    description: "A hearty Montenegrin dish featuring creamy mashed potatoes and cheese. /350g/",
+    description:
+      "A hearty Montenegrin dish featuring creamy mashed potatoes and cheese. /350g/",
     imageUrl: "/meat.jpg",
   },
   {
     name: "Omellette",
-    description: "A traditional Montenegrin omelette served with tomatos. /300g/",
+    description:
+      "A traditional Montenegrin omelette served with tomatos. /300g/",
     imageUrl: "/sarma.jpg",
   },
   {
     name: "Scrambled Eggs",
-    description: "Scrambled eggs paired with tomatos and organic cheese. /300g/",
+    description:
+      "Scrambled eggs paired with tomatos and organic cheese. /300g/",
     imageUrl: "/chicken3.jpeg",
   },
   {
     name: "Traditional Montenegrin Breakfast",
-    description: "Traditional breakfast paired with eggs, tomatos, fresh cheese and meat. /300g/",
+    description:
+      "Traditional breakfast paired with eggs, tomatos, fresh cheese and meat. /300g/",
     imageUrl: "/fish4.jpeg",
   },
   {
     name: "Cheese Pie",
-    description: "A flavorful Balkan dish made with cheese wrapped in flaky pastry. /250g/",
+    description:
+      "A flavorful Balkan dish made with cheese wrapped in flaky pastry. /250g/",
     imageUrl: "/cevapcici5.jpeg",
   },
   {
@@ -39,7 +44,8 @@ const dishes: Dish[] = [
   },
   {
     name: "Fried Bread with Eggs",
-    description: "Bread made out of organic dough paired with scrambled eggs. /300g/",
+    description:
+      "Bread made out of organic dough paired with scrambled eggs. /300g/",
     imageUrl: "/przenice.jpg",
   },
   {
@@ -49,7 +55,8 @@ const dishes: Dish[] = [
   },
   {
     name: "Charcuterie Plate",
-    description: "A selection of cured meats and cheeses, perfect for sharing. /300g/ 500g/",
+    description:
+      "A selection of cured meats and cheeses, perfect for sharing. /300g/ 500g/",
     imageUrl: "/meat.jpg",
   },
   {
@@ -59,12 +66,14 @@ const dishes: Dish[] = [
   },
   {
     name: "Veal Broth with Vegetables",
-    description: "A comforting bowl of veal broth enriched with fresh vegetables. /150g/",
+    description:
+      "A comforting bowl of veal broth enriched with fresh vegetables. /150g/",
     imageUrl: "/broth.jpg",
   },
   {
     name: "Veal Soup with Vegetables",
-    description: "A hearty soup made with tender veal and seasonal vegetables. /150g/",
+    description:
+      "A hearty soup made with tender veal and seasonal vegetables. /150g/",
     imageUrl: "/supapiletina.jpg",
   },
   {
@@ -79,17 +88,20 @@ const dishes: Dish[] = [
   },
   {
     name: "Minced Meat with Potatoes and Garlic",
-    description: "Flavorful minced meat served with tender potatoes and garlic, perfect for sharing. /300g/",
+    description:
+      "Flavorful minced meat served with tender potatoes and garlic, perfect for sharing. /300g/",
     imageUrl: "/meat.jpg",
   },
   {
     name: "Traditional Mixed Meat on the Grill",
-    description: "A variety of grilled meats showcasing traditional flavors. /400g/",
+    description:
+      "A variety of grilled meats showcasing traditional flavors. /400g/",
     imageUrl: "/mixedmeat.jpg",
   },
   {
     name: "Trout Served with Potato Salad",
-    description: "Fresh trout paired with a light potato salad for a refreshing meal. /350g/",
+    description:
+      "Fresh trout paired with a light potato salad for a refreshing meal. /350g/",
     imageUrl: "/sarma.jpg",
   },
 ];
@@ -101,10 +113,16 @@ const DishGallery: React.FC = () => (
       flexWrap: "wrap",
       gap: "1.5em",
       justifyContent: "center",
+      margin: "0 auto",
     }}
   >
     {dishes.map((dish, index) => (
-      <DishCard key={index} name={dish.name} description={dish.description} imageUrl={dish.imageUrl} />
+      <DishCard
+        key={index}
+        name={dish.name}
+        description={dish.description}
+        imageUrl={dish.imageUrl}
+      />
     ))}
   </div>
 );
