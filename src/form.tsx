@@ -44,7 +44,7 @@ const Form = () => (
       id="reservations"
       className="bg-white justify-center items-center w-full lg:min-h-[70vh] max-w-full flex"
     >
-      <div className="w-full lg:w-[70%] lg:py-4 flex justify-center items-center gap-4 relative overflow-hidden flex-col lg:px-4 rounded-lg">
+      <div className="w-full lg:w-[70%] lg:py-0 flex justify-center items-center gap-4 relative overflow-hidden flex-col lg:px-4 rounded-lg">
         <div className="flex flex-col gap-2 items-center rounded-xl lg:p-6 w-full z-20 max-w-[90%] lg:max-w-[60%]">
           {formFields.map((field) => (
             <div key={field.id} className="w-full pr-4">

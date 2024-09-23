@@ -49,6 +49,10 @@ function App() {
         <Nav />
       </div>
 
+      <h4 className="p-0 font-[Copperplate] tracking-tight justify-self-center text-center text-3xl mb-2 mt-20">
+        Make an reservation
+      </h4>
+
       <Form />
       <Section text="MENU">
         <DishGallery />
@@ -136,14 +140,19 @@ function App() {
           color: "white",
           textAlign: "center",
           position: "relative",
-          height: "10em",
+          height: "5em",
           justifyContent: "center",
           alignItems: "center",
           display: "flex",
           marginTop: "5rem",
         }}
       >
-        Visit us
+        <div>
+          <p className="min-w-4 max-w-70">
+            &copy; {new Date().getFullYear()} Floyd Food Factory. All rights
+            reserved.
+          </p>
+        </div>
       </footer>
     </div>
   );
