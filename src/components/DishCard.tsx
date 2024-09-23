@@ -5,7 +5,7 @@ export interface Dish {
 }
 
 export const DishCard: React.FC<Dish> = ({ name, description, imageUrl }) => (
-  <div className="bg-white w-1/4 rounded-lg overflow-hidden mb-6 flex flex-col shadow-md p-4 m-0 font-[Fira Sans Condensed] min-w-[300px]">
+  <div className="bg-white w-1/4 rounded-lg overflow-hidden mb-6 flex flex-col shadow-md p-2 m-0 font-[Fira Sans Condensed] min-w-[300px]">
     <div
       className="w-full h-[15em] rounded-lg bg-black my-8"
       style={{
