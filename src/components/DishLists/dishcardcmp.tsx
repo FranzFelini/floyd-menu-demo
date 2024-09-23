@@ -5,12 +5,12 @@ const dishes: Dish[] = [
   {
     name: "Breakfast Floyd",
     description: "A hearty Montenegrin dish featuring creamy mashed potatoes and cheese. /350g/",
-    imageUrl: "/kacamak4.jpg.webp",
+    imageUrl: "/meat.jpg",
   },
   {
     name: "Omellette",
     description: "A traditional Montenegrin omelette served with tomatos. /300g/",
-    imageUrl: "/sarma2.jpeg",
+    imageUrl: "/sarma.jpg",
   },
   {
     name: "Scrambled Eggs",
@@ -40,7 +40,7 @@ const dishes: Dish[] = [
   {
     name: "Fried Bread with Eggs",
     description: "Bread made out of organic dough paired with scrambled eggs. /300g/",
-    imageUrl: "/salad8.jpeg",
+    imageUrl: "/przenice.jpg",
   },
   {
     name: "Floyd Sandwich",
@@ -50,7 +50,7 @@ const dishes: Dish[] = [
   {
     name: "Charcuterie Plate",
     description: "A selection of cured meats and cheeses, perfect for sharing. /300g/ 500g/",
-    imageUrl: "/pancake9.jpeg",
+    imageUrl: "/meat.jpg",
   },
   {
     name: "Roast",
@@ -60,12 +60,12 @@ const dishes: Dish[] = [
   {
     name: "Veal Broth with Vegetables",
     description: "A comforting bowl of veal broth enriched with fresh vegetables. /150g/",
-    imageUrl: "/pancake9.jpeg",
+    imageUrl: "/broth.jpg",
   },
   {
     name: "Veal Soup with Vegetables",
     description: "A hearty soup made with tender veal and seasonal vegetables. /150g/",
-    imageUrl: "/pancake9.jpeg",
+    imageUrl: "/supapiletina.jpg",
   },
   {
     name: "Dish of the Day with Homemade Bread",
@@ -75,22 +75,22 @@ const dishes: Dish[] = [
   {
     name: "Traditional Montenegrin Porridge with Sour Milk",
     description: "Creamy porridge complemented by tangy sour milk. /350g/",
-    imageUrl: "/pancake9.jpeg",
+    imageUrl: "/salad8.jpeg",
   },
   {
     name: "Minced Meat with Potatoes and Garlic",
     description: "Flavorful minced meat served with tender potatoes and garlic, perfect for sharing. /300g/",
-    imageUrl: "/pancake9.jpeg",
+    imageUrl: "/meat.jpg",
   },
   {
     name: "Traditional Mixed Meat on the Grill",
     description: "A variety of grilled meats showcasing traditional flavors. /400g/",
-    imageUrl: "/pancake9.jpeg",
+    imageUrl: "/mixedmeat.jpg",
   },
   {
     name: "Trout Served with Potato Salad",
     description: "Fresh trout paired with a light potato salad for a refreshing meal. /350g/",
-    imageUrl: "/pancake9.jpeg",
+    imageUrl: "/sarma.jpg",
   },
 ];
 
